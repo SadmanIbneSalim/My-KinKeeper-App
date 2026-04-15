@@ -1,12 +1,17 @@
 import React from "react";
+import { Link, NavLink } from "react-router";
+import './NavBar.css';
+import { House } from 'lucide-react';
+import { Clock3 } from 'lucide-react';
+import { ChartLine } from 'lucide-react';
 
 
 
 const NavBar = () => {
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
-        <div className="navbar-start">
+    <div className="bg-base-100 shadow-sm">
+      <div className="container mx-auto navbar  justify-between">
+        <div className="">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -30,52 +35,32 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <NavLink to="/timeline">Timeline</NavLink>
               </li>
               <li>
-                <a>Item 3</a>
+                <NavLink to="/stats">Stats</NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Link to="/" className="btn btn-ghost text-xl">Keen<span className="text-[#244D3F]">Keeper</span></Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+             <NavLink to="/"><House size={20} />Home</NavLink>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2 bg-base-100 w-40 z-1">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <NavLink to="/timeline"><Clock3 size={20} />Timeline</NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink to="/stats"><ChartLine size={20} />Stats</NavLink>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
-        </div>
+
       </div>
     </div>
   );
