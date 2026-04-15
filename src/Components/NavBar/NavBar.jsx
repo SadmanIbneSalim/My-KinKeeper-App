@@ -49,13 +49,13 @@ const NavBar = () => {
         </div>
         <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
+            <li className="text-neutral/60 ">
              <NavLink to="/"><House size={20} />Home</NavLink>
             </li>
-            <li>
+            <li className="text-neutral/60 ">
               <NavLink to="/timeline"><Clock3 size={20} />Timeline</NavLink>
             </li>
-            <li>
+            <li className="text-neutral/60 ">
               <NavLink to="/stats"><ChartLine size={20} />Stats</NavLink>
             </li>
           </ul>
