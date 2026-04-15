@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied English together at ULAB. Always had deep talks about literature and life.",
+    "goal": 14,
+    "next_due_date": "2026-03-28"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "nusrat.jahan@yahoo.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["school", "best friend"],
+    "bio": "School friend since class 6. We still share everything and support each other.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 3,
+    "name": "Sabbir Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/67.jpg",
+    "email": "sabbir.dev@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["coding", "project partner"],
+    "bio": "Worked together on React projects. Very practical thinker and problem solver.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 4,
+    "name": "Tahura Farbin",
+    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "email": "tahura.farbin@outlook.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["faculty", "mentor"],
+    "bio": "Environmental science faculty who guided me during presentations and research work.",
+    "goal": 14,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 5,
+    "name": "Imran Kabir",
+    "picture": "https://randomuser.me/api/portraits/men/15.jpg",
+    "email": "imran.kabir@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["gym", "friend"],
+    "bio": "Gym buddy. We motivate each other to stay consistent and improve fitness.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 6,
+    "name": "Mariam Akter",
+    "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+    "email": "mariam.akter@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["neighbor", "family friend"],
+    "bio": "Lives nearby. Our families know each other well and we meet during festivals.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 7,
+    "name": "Rakib Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/40.jpg",
+    "email": "rakib.hasan@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "football"],
+    "bio": "Used to play football together every evening. Lost touch recently.",
+    "goal": 14,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 8,
+    "name": "Sharmeen Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "email": "sharmeen.sultana@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["debate club", "university"],
+    "bio": "Met in debate club. Sharp thinker and loves discussing social issues.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  }
+]
