@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Card from './Card';
+import { FriendContext } from '../context/FriendsProvider';
 
 import { useLoaderData, useParams } from 'react-router';
 
 import { Archive, BellRing, Delete,  MessageSquareMore, Phone, Video,  } from 'lucide-react';
 
+
 const CardDetails = () => {
     const friends=useLoaderData();
-   
-    
     const {id}=useParams();
     const expectedFriend=friends.find(friend=>friend.id==id);
+
+  
+    
+    const { handleCall, handleText, handleVideo } = useContext(FriendContext);
+    
+    
     
     
     
@@ -98,20 +104,20 @@ const CardDetails = () => {
                 <div className='bg-white  col-span-9 row-span-6 rounded-xl shadow p-5 '>
                     <p className='text-xl text-[#244D3F]'>Quick Check-In</p>
                     <div className=' my-10  flex justify-between'>
-                        <button className=' border py-6 px-20 bg-neutral-200 rounded-xl transition-all duration-300 hover:scale-[1.02]  hover:pointer-coarse: cursor-grab active:cursor-grabbing'>
-                            <Phone></Phone>
-                            <h1>Call</h1>
-                        </button>
+                        <button onClick={() => handleCall(expectedFriend)} className='border py-6 px-20 bg-neutral-200 rounded-xl transition-all duration-300 hover:scale-[1.02] cursor-grab active:cursor-grabbing'>
+                        <Phone />
+                        <h1>Call</h1>
+                    </button>
 
-                        <button className=' border py-6 px-20 bg-neutral-200 rounded-xl transition-all duration-300 hover:scale-[1.02]  hover:pointer-coarse: cursor-grab active:cursor-grabbing'>
-                            <MessageSquareMore size={20} />
-                            <h1>Text</h1>
-                        </button>
+                        <button onClick={() => handleText(expectedFriend)} className='border py-6 px-20 bg-neutral-200 rounded-xl transition-all duration-300 hover:scale-[1.02] cursor-grab active:cursor-grabbing'>
+                        <MessageSquareMore size={20} />
+                        <h1>Text</h1>
+                    </button>
 
-                        <button className=' border py-6 px-20 bg-neutral-200 rounded-xl transition-all duration-300 hover:scale-[1.02]  hover:pointer-coarse: cursor-grab active:cursor-grabbing'>
-                            <Video></Video>
-                            <h1>Video</h1>
-                        </button>
+                        <button onClick={() => handleVideo(expectedFriend)} className='border py-6 px-20 bg-neutral-200 rounded-xl transition-all duration-300 hover:scale-[1.02] cursor-grab active:cursor-grabbing'>
+                        <Video />
+                        <h1>Video</h1>
+                    </button>
                     </div>
                 </div>
 
