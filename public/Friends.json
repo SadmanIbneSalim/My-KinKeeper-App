@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Arafat Rahman",
-    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "picture": "https://i.ibb.co.com/wZ6WsK4c/Arafat-Rahman.webp",
     "email": "arafat.rahman@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Nusrat Jahan",
-    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "picture": "https://i.ibb.co.com/spk3BmFk/Nusrat-Jahan.avif",
     "email": "nusrat.jahan@yahoo.com",
     "days_since_contact": 10,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Sabbir Hossain",
-    "picture": "https://randomuser.me/api/portraits/men/67.jpg",
+    "picture": "https://i.ibb.co.com/LDc0gfdW/Sabbir-Hossain.avif",
     "email": "sabbir.dev@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Tahura Farbin",
-    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "picture": "https://i.ibb.co.com/FbrYqw3k/Tahura-Farbin.jpg",
     "email": "tahura.farbin@outlook.com",
     "days_since_contact": 16,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Imran Kabir",
-    "picture": "https://randomuser.me/api/portraits/men/15.jpg",
+    "picture": "https://i.ibb.co.com/5gTPWmwT/Imran-Kabir.jpg",
     "email": "imran.kabir@gmail.com",
     "days_since_contact": 12,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Mariam Akter",
-    "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+    "picture": "https://i.ibb.co.com/bRjWTwxc/Marim-Akhter.webp",
     "email": "mariam.akter@gmail.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Rakib Hasan",
-    "picture": "https://randomuser.me/api/portraits/men/40.jpg",
+    "picture": "https://i.ibb.co.com/d0CwYgxF/Rakib-hasan.avif",
     "email": "rakib.hasan@gmail.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Sharmeen Sultana",
-    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "picture": "https://i.ibb.co.com/gCjxqg7/Sharmin-sultana.jpg",
     "email": "sharmeen.sultana@gmail.com",
     "days_since_contact": 7,
     "status": "on-track",

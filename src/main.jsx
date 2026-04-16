@@ -5,19 +5,25 @@ import { createBrowserRouter } from 'react-router';
 import { RouterProvider } from 'react-router/dom';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/NavButtons/Home/Home';
-import Hero from './Components/Hero/Hero';
+
 import Timeline from './Components/NavButtons/Timeline/Timeline';
 import Stats from './Components/NavButtons/stats/Stats';
+import CardDetails from './Components/Cards/CardDetails';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component:Dashboard,
+    element:<Dashboard></Dashboard>,
     children:[
-      {index:true, Component:Home},
-      {path: 'timeline' , Component: Timeline },
-      {path: 'stats', Component: Stats}
+      {index:true, element:<Home></Home>},
+      {path: 'timeline' , element:<Timeline></Timeline> },
+      {path: 'stats', element:<Stats></Stats>},
+      {path:'home/cardDetails/:id',
+        loader: ()=>fetch('/Friends.json'),
+         element:<CardDetails></CardDetails>
+        
+        }
     ]
 
   },
@@ -28,6 +34,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </StrictMode>,
 )

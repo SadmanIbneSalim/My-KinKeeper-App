@@ -51,7 +51,7 @@ const Footer = () => {
         
           
 
-          <div className=" flex justify-between  gap-16 text-white/60">
+          <div className=" flex justify-between  gap-16 mt-10 text-white/60">
              <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
              <div className=" flex justify-between gap-3  ">
               <p>Privacy Policy  </p>

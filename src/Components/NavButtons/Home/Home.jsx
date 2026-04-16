@@ -1,7 +1,8 @@
 import React from 'react';
 import Hero from '../../Hero/Hero';
 import Cards from '../../Cards/Cards';
-import SummaryCards from '../../Cards/SumaryCards';
+import SummaryCards from '../../Cards/SummaryCards';
+import CardDetails from '../../Cards/CardDetails';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <SummaryCards></SummaryCards>
             
             <Cards></Cards>
+            
         </div>
     );
 };
