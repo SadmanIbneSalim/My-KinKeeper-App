@@ -6,9 +6,11 @@ import { Outlet } from "react-router";
 
 function Dashboard() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen bg-base-200">
       <NavBar></NavBar>
-      <Outlet></Outlet>
+      <main className="grow">
+        <Outlet />
+      </main>
       <Footer></Footer>
     </div>
   );
