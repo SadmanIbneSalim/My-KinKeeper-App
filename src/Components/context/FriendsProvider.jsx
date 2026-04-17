@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 
 export const FriendContext = createContext();
 
+
 const FriendsProvider = ({ children }) => {
     const [timeline, setTimeline] = useState(() => {
         const savedData = localStorage.getItem('my_timeline');

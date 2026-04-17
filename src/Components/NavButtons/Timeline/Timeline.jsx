@@ -102,10 +102,10 @@ const Timeline = () => {
                     className="w-12 h-12 rounded-full object-cover border-2 border-gray-200"
                   />
                   <div>
-                    <h4 className="font-bold text-neutral-800">{entry.name}</h4>
+                    
                     <div className="flex items-center gap-2 text-sm text-neutral-500">
                       {getIcon(entry.actionType)}
-                      <span>{entry.actionType} established</span>
+                      <span>{entry.actionType}  with <span><h4 className="font-bold text-neutral-800">{entry.name}</h4></span> </span>
                     </div>
                   </div>
                 </div>
