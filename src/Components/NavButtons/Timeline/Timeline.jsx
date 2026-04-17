@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"; // useState যোগ করা হয়েছে
+import React, { useContext, useState } from "react"; 
 import { FriendContext } from "../../context/FriendsProvider";
 import {
   Phone,

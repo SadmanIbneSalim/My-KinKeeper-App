@@ -1,18 +1,17 @@
 import React, { createContext, useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 
 export const FriendContext = createContext();
 
 const FriendsProvider = ({ children }) => {
     const [timeline, setTimeline] = useState(() => {
-        const savedData = localStorage.getItem('myTimeline');
+        const savedData = localStorage.getItem('my_timeline');
         return savedData ? JSON.parse(savedData) : [];
     });
 
     useEffect(() => {
-        localStorage.setItem('myTimeline', JSON.stringify(timeline));
+        localStorage.setItem('my_timeline', JSON.stringify(timeline));
     }, [timeline]);
-
-    
 
     const addToTimeline = (currentFriend, actionType) => {
         const newEntry = {
@@ -23,7 +22,7 @@ const FriendsProvider = ({ children }) => {
         };
 
         setTimeline([newEntry, ...timeline]); 
-        alert(`${actionType} added to timeline!`);
+        toast.success(`${actionType} added to timeline!`);
     };
 
     const data = {

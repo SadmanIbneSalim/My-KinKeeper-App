@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Hero from '../../Hero/Hero';
 import Cards from '../../Cards/Cards';
 import SummaryCards from '../../Cards/SummaryCards';
-import CardDetails from '../../Cards/CardDetails';
+
 
 const Home = () => {
     return (
@@ -10,7 +10,15 @@ const Home = () => {
             <Hero></Hero>
             <SummaryCards></SummaryCards>
             
-            <Cards></Cards>
+            
+
+            <Suspense fallback={
+                <div className="flex justify-center items-center min-h-100">
+                    <span className="loading loading-bars loading-xl text-success"></span>
+                </div>
+            }>
+                <Cards />
+            </Suspense>
             
         </div>
     );

@@ -11,7 +11,9 @@ const Cards = () => {
     return (
         
             <div className='bg-base-200 mb-20'>
+                <h1 className='text-2xl font-bold text-[#244D3F] text-center'>Your Friends</h1>
                 <div className='max-w-277.5 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5 bg-base-200'>
+                    
             {
                 FriendsPromiseData.data.map(FriendsData=> <Card key={FriendsData.id} FriendsData={FriendsData}></Card>)        
                     }

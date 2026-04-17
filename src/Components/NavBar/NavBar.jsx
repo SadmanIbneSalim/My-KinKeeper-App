@@ -9,7 +9,7 @@ import { ChartLine } from 'lucide-react';
 
 const NavBar = () => {
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-base-100 sticky top-0 z-5 shadow-sm">
       <div className="container mx-auto navbar  justify-between">
         <div className="">
           <div className="dropdown">
