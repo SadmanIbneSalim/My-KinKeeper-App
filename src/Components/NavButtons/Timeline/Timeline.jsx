@@ -88,15 +88,13 @@ const Timeline = () => {
 
         <div className="space-y-4">
           {filteredTimeline.length === 0 ? (
-            <p className="text-neutral-500 text-center py-10 italic">
+            <p className="text-neutral-500 text-center py-20 text-xl">
               No {filter !== "All" ? filter : ""} activity found yet.
-            </p>
-          ) : (
-            filteredTimeline.map((entry) => (
-              <div
-                key={entry.entryId}
-                className="flex items-center justify-between p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-md"
-              >
+            </p>)
+             : 
+             (filteredTimeline.map((entry) => (
+              <div key={entry.entryId}
+                className="flex items-center justify-between p-4 bg-white rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-md">
                 <div className="flex items-center gap-4">
                   <img
                     src={entry.picture}

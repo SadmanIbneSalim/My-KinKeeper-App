@@ -1,9 +1,18 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 
 export const FriendContext = createContext();
 
 const FriendsProvider = ({ children }) => {
-    const [timeline, setTimeline] = useState([]);
+    const [timeline, setTimeline] = useState(() => {
+        const savedData = localStorage.getItem('myTimeline');
+        return savedData ? JSON.parse(savedData) : [];
+    });
+
+    useEffect(() => {
+        localStorage.setItem('myTimeline', JSON.stringify(timeline));
+    }, [timeline]);
+
+    
 
     const addToTimeline = (currentFriend, actionType) => {
         const newEntry = {

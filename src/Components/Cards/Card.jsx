@@ -13,9 +13,9 @@ const Card = ({ FriendsData }) => {
       <h2 className="text-lg font-bold">{FriendsData.name}</h2>
       <p className="text-neutral/60">{FriendsData.days_since_contact}d ago</p>
 
-      <div className="flex justify-between ">
+      <div className="md:flex w-fit mx-auto justify-between ">
         {FriendsData.tags.map((tag,index) => (
-          <p key={index} className="bg-green-200/50 shadow my-2 rounded-2xl px-2">{tag}</p>
+          <p key={index} className="bg-green-200/50 shadow  my-2 rounded-2xl px-2">{tag}</p>
         ))}
       </div>
       <p
